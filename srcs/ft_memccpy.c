@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 13:59:23 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/19 16:35:10 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/19 17:28:47 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
 void	*ft_memccpy(void *restrict s1, const void *restrict s2, int c, size_t n)
 {
-	unsigned char *dest;
-	const unsigned char *src;
+	char *dest;
+	const char *src;
 
 	//tf = (char)c;
 	dest = s1;
@@ -22,11 +22,11 @@ void	*ft_memccpy(void *restrict s1, const void *restrict s2, int c, size_t n)
 //	printf("%c %d\n", tf, c);
 	while (n--)
 	{
-		ft_memset(s1, *src, 1);
-		s1++;
+		ft_memset(dest, *src, 1);
+		if (*src == (unsigned char)c)
+			return (++dest);
+		dest++;
 		src++;
-		if (*src  == (char)c)
-		return (s1);
 	}
 	return (NULL);
 }
