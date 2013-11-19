@@ -6,7 +6,7 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 12:17:33 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/19 18:00:12 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/19 18:29:41 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -17,6 +17,8 @@ int main(void)
 	char str1[50] = "Je suis le roi des bambous";
 	char str2[50] = "BAMBOu POWER !!!";
 	char str3[42] = "Je suis le roi des bambous";
+	printf("%s\n", ft_memchr(str1, 'u', 19));
+	printf("%s\n", memchr(str1, 'u', 19));
 //TESTS MEEMOVE
 	printf("%s\n", memmove(str2, str1, 17));
 	printf("%s\n", ft_memmove(str2, str1, 17));
