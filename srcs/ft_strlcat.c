@@ -6,7 +6,7 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:30:47 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/20 17:47:43 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/20 18:03:12 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
@@ -14,7 +14,7 @@
 size_t	strlcpy(char *__restrict__ dst, const char *__restrict__ src, size_t size)
 {
 	char *dest;
-	const *char source;
+	const char *source;
 	size_t n;
 	size_t len;
 
