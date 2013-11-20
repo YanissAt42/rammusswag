@@ -6,7 +6,7 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 12:17:33 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/20 12:38:03 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/20 13:55:27 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
@@ -23,6 +23,9 @@ int main(void)
 //TESTS STRNCPY
 //	printf("%s\n", strncpy(str1, str2, 3));
 //	printf("%s\n", ft_strncpy(str3, str2, 3));
+//TESTS STRNCAT
+	printf("%s\n", ft_strncat(str3, str2, 3));
+	printf("%s\n", strncat(str1, str2, 3));
 //TESTS STRCAT
 	printf("%s\n", ft_strcat(str3, str2));
 	printf("%s\n", strcat(str1, str2));
