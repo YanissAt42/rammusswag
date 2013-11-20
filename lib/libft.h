@@ -6,7 +6,7 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 12:38:35 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/20 11:08:31 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/20 11:56:52 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -25,4 +25,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s1);
+char	*ft_strcpy(char *s1, const char *s2);
+char	*ft_strncpy(char *restrict s1, const char *restrict s2, size_t n);
 #endif
