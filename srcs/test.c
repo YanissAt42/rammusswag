@@ -6,7 +6,7 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 12:17:33 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/20 11:23:30 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/20 12:38:03 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
@@ -14,9 +14,18 @@
 int main(void)
 {
 	char str1[50] = "Je suis le roi des bambous";
-	char str2[50] = "Je BAMBOu POWER !!!";
-	char str3[42] = "Je suis le roi des bambous";
+	char str2[50] = "El BAMBOu POWER !!!";
+	char str3[50] = "Je suis le roi des bambous";
 
+//TESTS STRCPY
+//	printf("%s\n", strcpy(str1, str2));
+//	printf("%s\n", ft_strcpy(str3, str2));
+//TESTS STRNCPY
+//	printf("%s\n", strncpy(str1, str2, 3));
+//	printf("%s\n", ft_strncpy(str3, str2, 3));
+//TESTS STRCAT
+	printf("%s\n", ft_strcat(str3, str2));
+	printf("%s\n", strcat(str1, str2));
 //TESTS STRDUP
 	printf("%s\n", strdup(str1));
 	printf("%s\n", ft_strdup(str3));
