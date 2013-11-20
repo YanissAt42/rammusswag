@@ -6,10 +6,9 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 12:17:33 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/19 19:22:07 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/20 11:23:30 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
 #include "../lib/libft.h"
 
 int main(void)
@@ -18,6 +17,12 @@ int main(void)
 	char str2[50] = "Je BAMBOu POWER !!!";
 	char str3[42] = "Je suis le roi des bambous";
 
+//TESTS STRDUP
+	printf("%s\n", strdup(str1));
+	printf("%s\n", ft_strdup(str3));
+//TESTS STRLEN
+	printf("%zd \n", strlen(str2));
+	printf("%zd \n", ft_strlen(str2));
 //TESTS MEMCMP
 	printf("%d\n", ft_memcmp(str1, str2, 8));
 	printf("%d\n", memcmp(str1, str2, 8));
