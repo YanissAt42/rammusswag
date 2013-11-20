@@ -6,7 +6,7 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 12:17:33 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/20 13:55:27 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/20 15:50:40 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
@@ -17,6 +17,9 @@ int main(void)
 	char str2[50] = "El BAMBOu POWER !!!";
 	char str3[50] = "Je suis le roi des bambous";
 
+	ft_putnbr(ft_isalpha('&'));
+	ft_putstr("Bamboula\n");
+	ft_putendl("BIG BAMBOU");
 //TESTS STRCPY
 //	printf("%s\n", strcpy(str1, str2));
 //	printf("%s\n", ft_strcpy(str3, str2));

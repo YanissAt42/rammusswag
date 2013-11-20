@@ -6,7 +6,7 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 12:38:35 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/20 13:54:56 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/20 15:47:23 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -29,4 +29,10 @@ char	*ft_strcpy(char *s1, const char *s2);
 char	*ft_strncpy(char *restrict s1, const char *restrict s2, size_t n);
 char	*ft_strcat(char *restrict s1, const char *restricts2);
 char	*ft_strncat(char *restrict s1, const char *restrict s2, size_t n);
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t size);
+void	ft_putchar(char c);
+void	ft_putstr(char const *s);
+void	ft_putendl(char const *s);
+void	ft_putnbr(int n);
+int		ft_isalpha(int c);
 #endif
