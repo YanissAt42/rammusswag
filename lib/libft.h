@@ -6,7 +6,7 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 12:38:35 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/20 16:20:00 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/20 17:10:30 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -41,4 +41,6 @@ int		ft_isalnum(int c);
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 char	*ft_strnew(size_t size);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 #endif
