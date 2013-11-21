@@ -6,14 +6,14 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 14:37:56 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/21 14:42:35 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/21 14:45:00 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
 int main(void)
 {
-	printf("%s\n",ft_strchr("BAMcBOU", 'c'));
-
+	printf("%s\n", ft_strchr("BAMcBOU", 'c'));
+	printf("%s\n", strchr("BAMcBOU", 'c'));
 	return 0;
 }
