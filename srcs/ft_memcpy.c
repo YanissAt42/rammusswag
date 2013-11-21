@@ -6,12 +6,12 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 13:59:23 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/19 15:08:05 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/21 14:09:04 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
-void	*ft_memcpy(void *__restrict__ s1, const void *__restrict__ s2, size_t n)
+void	*ft_memcpy(void * s1, const void * s2, size_t n)
 {
 	char *dest;
 

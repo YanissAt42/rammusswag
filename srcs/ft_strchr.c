@@ -1,37 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/21 14:13:55 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/21 14:24:55 by ychnakib         ###   ########.fr       */
+/*   Created: 2013/11/21 14:28:46 by ychnakib          #+#    #+#             */
+/*   Updated: 2013/11/21 14:41:26 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
-char *ft_strstr(const char *s1, const char *s2)
+char *ft_strchr(const char *s, int c)
 {
-
-	char c;
-	char sc;
-	size_t len;
-
-	c = *s2++;
-	if (!c)
-		return ((char *)s1);
-	len = ft_strlen(s2);
-	while (ft_strncmp(s1, s2, len))
+	printf("%c\n", (char)c);
+	while (*s != '\0')
 	{
-		sc = 0;
-		while (sc != c)
-		{
-			sc = *s1++;
-			if (!sc)
-				return ((char *)0);
-		}
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
 	}
-
-	return ((char *)(s1 - 1));
+	return (NULL);
 }

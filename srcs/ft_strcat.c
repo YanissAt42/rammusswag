@@ -6,12 +6,12 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 12:12:07 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/20 12:51:00 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/21 14:10:32 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
-char *ft_strcat(char *__restrict__ s1, const char *__restrict__ s2)
+char *ft_strcat(char *s1, const char *s2)
 {
 	ft_memcpy((s1 + ft_strlen(s1)), s2, (ft_strlen(s2)+1));
 	return (s1);

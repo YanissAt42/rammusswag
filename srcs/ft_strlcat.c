@@ -6,12 +6,12 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:30:47 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/20 18:03:12 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/21 14:11:21 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
-size_t	strlcpy(char *__restrict__ dst, const char *__restrict__ src, size_t size)
+size_t	strlcpy(char *dst, const char *src, size_t size)
 {
 	char *dest;
 	const char *source;
