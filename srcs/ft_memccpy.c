@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
-void	*ft_memccpy(void *restrict s1, const void *restrict s2, int c, size_t n)
+void	*ft_memccpy(void *__restrict__ s1, const void *__restrict__ s2, int c, size_t n)
 {
 	char *dest;
 	const char *src;
@@ -23,7 +23,7 @@ void	*ft_memccpy(void *restrict s1, const void *restrict s2, int c, size_t n)
 	while (n--)
 	{
 		ft_memset(dest, *src, 1);
-		if (*src == (unsigned char)c)
+		if (*src == (char)c)
 			return (++dest);
 		dest++;
 		src++;

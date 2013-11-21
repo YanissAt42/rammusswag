@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
-char *ft_strcat(char *restrict s1, const char *restrict s2)
+char *ft_strcat(char *__restrict__ s1, const char *__restrict__ s2)
 {
 	ft_memcpy((s1 + ft_strlen(s1)), s2, (ft_strlen(s2)+1));
 	return (s1);

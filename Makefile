@@ -11,12 +11,12 @@
 #******************************************************************************#
 NAME = libft.a
 
-SRC = srcs/*.c lib/libft.h
+SRC = srcs/ft_*.c lib/libft.h
 
 all: $(NAME)
 
 $(NAME):
-	clang -c -Wall -Werror -Wextra $(SRC)
+	gcc -Wall -Werror -Wextra -c $(SRC)
 	ar rc $(NAME) *.o
 	ranlib $(NAME)
 

@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
-void	*ft_memcpy(void *restrict s1, const void *restrict s2, size_t n)
+void	*ft_memcpy(void *__restrict__ s1, const void *__restrict__ s2, size_t n)
 {
 	char *dest;
 
