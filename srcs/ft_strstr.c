@@ -6,7 +6,7 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 14:13:55 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/21 14:24:55 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/21 17:02:59 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
@@ -32,6 +32,5 @@ char *ft_strstr(const char *s1, const char *s2)
 				return ((char *)0);
 		}
 	}
-
-	return ((char *)(s1 - 1));
+	return ((char *)(s1 - s2));
 }

@@ -6,12 +6,12 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 17:30:47 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/21 14:11:21 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/21 16:14:30 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
-size_t	strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	char *dest;
 	const char *source;

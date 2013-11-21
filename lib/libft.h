@@ -6,7 +6,7 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 12:38:35 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/21 14:35:28 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/21 16:13:24 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -45,4 +45,12 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+int		ft_strcmp(const char *s1, const char *s2);
+char	*ft_strnstr(const char *s1,  const char *s2, size_t n);
+int		ft_isprint(int c);
+int		ft_isascii(int c);
+int		ft_atoi(const char *str);
+char	*ft_strstr(const char *s1, const char *s2);
+size_t	 strlcpy(char *dst, const char *src, size_t size);
 #endif

@@ -6,16 +6,13 @@
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/20 14:52:56 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/20 15:40:59 by ychnakib         ###   ########.fr       */
+/*   Updated: 2013/11/21 17:20:34 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
 void ft_memdel(void **ap)
 {
-	int i;
-
-	i = 0;
-	while (ap[i])
-		free(ap[i]);
+	free(*ap);
+	*ap = NULL;
 }
