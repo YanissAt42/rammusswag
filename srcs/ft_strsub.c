@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/20 15:29:45 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/21 18:08:40 by ychnakib         ###   ########.fr       */
+/*   Created: 2013/11/22 11:12:41 by ychnakib          #+#    #+#             */
+/*   Updated: 2013/11/22 11:19:53 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
-char *ft_strnew(size_t size)
+char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char *str;
+	char				*ret;
+	unsigned int		end;
 
-	if ((str = malloc(size * sizeof(char))) == NULL)
-		return (NULL);
-	size++;
-	while (size > 0)
+	end = start + len;
+	ret = malloc(len * sizeof(char));
+	while (start < end)
 	{
-		str[size] = '\0';
-		printf("%c\n", str[size]);
-		size--;
+		ret[len] = s[end];
+		end--;
+		len--;
 	}
-	return (str);
+	return (ret);
 }

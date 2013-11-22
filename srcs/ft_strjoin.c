@@ -1,28 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ychnakib <ychnakib@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2013/11/20 15:29:45 by ychnakib          #+#    #+#             */
-/*   Updated: 2013/11/21 18:08:40 by ychnakib         ###   ########.fr       */
+/*   Created: 2013/11/22 11:21:42 by ychnakib          #+#    #+#             */
+/*   Updated: 2013/11/22 11:39:55 by ychnakib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "../lib/libft.h"
 
-char *ft_strnew(size_t size)
+char *ft_strjoin(char const *s1, char const *s2)
 {
-	char *str;
+	char *ret;
 
-	if ((str = malloc(size * sizeof(char))) == NULL)
+	ret = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	if (ret == NULL)
 		return (NULL);
-	size++;
-	while (size > 0)
+	while (*s1)
 	{
-		str[size] = '\0';
-		printf("%c\n", str[size]);
-		size--;
+		*ret = *s1;
+		ret++;
+		s1++;
 	}
-	return (str);
+	s1++;
+	while (*s2)
+	{
+		*ret = *s2;
+		ret++;
+		s2++;
+	}
+	ret++;
+	*ret = '\0';
+	return (ret);
 }
